@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - ConnectHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2>ConnectHub</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</nav>
+
+<main class="container">
+
+    <section class="profile-card">
+
+        <div class="avatar" id="avatar">
+            U
+        </div>
+
+        <h1 id="profileName">Loading...</h1>
+
+        <p id="profileEmail"></p>
+
+        <p id="profileBio"></p>
+
+        <div class="stats">
+
+            <div>
+                <strong id="followersCount">0</strong>
+                <span>Followers</span>
+            </div>
+
+            <div>
+                <strong id="followingCount">0</strong>
+                <span>Following</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Edit Profile</h2>
+
+        <input
+            type="text"
+            id="editName"
+            placeholder="Name"
+        >
+
+        <textarea
+            id="editBio"
+            placeholder="Bio"
+        ></textarea>
+
+        <button onclick="updateProfile()">
+            Update Profile
+        </button>
+
+    </section>
+
+</main>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

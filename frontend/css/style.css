@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+.navbar {
+    background: #4f46e5;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.card,
+.post,
+.user-card,
+.profile-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    resize: vertical;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.post-content {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.comment-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.comment-box input {
+    margin: 0;
+}
+
+.comment {
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4f46e5;
+}
+
+.auth-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.auth-card h1 {
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.auth-card input {
+    margin: 10px 0;
+}
+
+.auth-card button {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.auth-card a {
+    color: #4f46e5;
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.profile-card .avatar {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    font-size: 28px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats strong {
+    font-size: 24px;
+}
+
+.stats span {
+    color: #777;
+}
